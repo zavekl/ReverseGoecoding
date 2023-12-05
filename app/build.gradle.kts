@@ -33,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -49,8 +50,9 @@ dependencies {
     implementation("io.insert-koin:koin-android:3.0.1")
 
     // RxJava
-    implementation("io.reactivex.rxjava3:rxkotlin:3.1.8")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
 
     // Retrofit
-    implementation("com.squareup.retrofit2:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
 }
