@@ -47,7 +47,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Koin
-    implementation("io.insert-koin:koin-android:3.0.1")
+    implementation("io.insert-koin:koin-android:3.2.2")
 
     // RxJava
     implementation("io.reactivex.rxjava3:rxandroid:3.0.2")

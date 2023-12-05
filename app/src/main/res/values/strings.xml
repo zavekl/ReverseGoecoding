@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ReverseGeocoding</string>
+    <string name="tv_reverse_sentence">Veuillez rentrer la latitude et la longitude :</string>
+    <string name="et_hint_lat">Latitude</string>
+    <string name="et_hint_lng">Longitude</string>
+    <string name="b_confirm">Confirmer</string>
+    <string name="tv_result">Résultat</string>
 </resources>
