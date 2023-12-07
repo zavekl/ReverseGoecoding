@@ -5,4 +5,7 @@
     <string name="et_hint_lng">Longitude</string>
     <string name="b_confirm">Confirmer</string>
     <string name="tv_result">Résultat</string>
+    <string name="tv_forward_sentence">Veuillez rentrer une adresse :</string>
+    <string name="et_adress">Adresse</string>
+    <string name="no_result">Aucun résultat</string>
 </resources>

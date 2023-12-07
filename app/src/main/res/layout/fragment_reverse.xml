@@ -35,7 +35,7 @@
                 android:textSize="17sp"
                 app:layout_constraintTop_toTopOf="@id/gl_id_1" />
 
-            <androidx.appcompat.widget.AppCompatEditText
+            <EditText
                 android:id="@+id/et_lat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,10 +43,10 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:hint="@string/et_hint_lat"
-                android:inputType="numberDecimal"
+                android:inputType="numberSigned|numberDecimal"
                 app:layout_constraintTop_toBottomOf="@id/tv_reverse_sentence_user" />
 
-            <androidx.appcompat.widget.AppCompatEditText
+            <EditText
                 android:id="@+id/et_lng"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,7 +54,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:hint="@string/et_hint_lng"
-                android:inputType="numberDecimal"
+                android:inputType="numberSigned|numberDecimal"
+                android:digits="0123456789.-"
                 app:layout_constraintTop_toBottomOf="@id/et_lat" />
 
             <Button
@@ -72,15 +73,17 @@
                 app:layout_constraintTop_toBottomOf="@id/et_lng" />
 
             <TextView
-                android:hint="@string/tv_result"
-                android:textSize="17sp"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@id/b_confirm"
                 android:id="@+id/tv_result"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                app:layout_constraintTop_toBottomOf="@id/b_confirm" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
