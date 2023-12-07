@@ -13,7 +13,6 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -24,6 +23,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+//            resValue("String", "api_key", geokeo_APIKey)
+        }
+        debug {
+//            resValue("String", "api_key", geokeo_APIKey)
         }
     }
     compileOptions {
@@ -49,10 +52,15 @@ dependencies {
     // Koin
     implementation("io.insert-koin:koin-android:3.2.2")
 
+
     // RxJava
+    implementation ("io.reactivex.rxjava3:rxjava:3.1.5")
     implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+    implementation("com.google.code.gson:gson:2.8.9")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
 }
