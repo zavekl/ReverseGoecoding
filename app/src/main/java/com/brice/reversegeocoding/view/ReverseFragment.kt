@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
+import com.brice.reversegeocoding.BuildConfig
 import com.brice.reversegeocoding.R
 import com.brice.reversegeocoding.model.LocationResult
 import com.brice.reversegeocoding.utils.KeyboardUtils
@@ -56,7 +57,7 @@ class ReverseFragment : Fragment() {
                 viewModel.searchReverseLocation(
                     etLat.text.toString().toDouble(),
                     etLng.text.toString().toDouble(),
-                    "6a2eb36e55d3ee824df90e2f8f77dbc0"
+                    BuildConfig.api_key
                 )
                     .subscribe(
                         { result ->

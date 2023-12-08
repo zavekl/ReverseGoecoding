@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.Fragment
+import com.brice.reversegeocoding.BuildConfig
 import com.brice.reversegeocoding.R
 import com.brice.reversegeocoding.model.LocationResult
 import com.brice.reversegeocoding.utils.KeyboardUtils
@@ -51,7 +52,7 @@ class ForwardFragment : Fragment() {
             if (!etAddress.text.isNullOrEmpty()) {
                 forwardViewModel.searchForwardLocation(
                     etAddress.text.toString(),
-                    "6a2eb36e55d3ee824df90e2f8f77dbc0"
+                    BuildConfig.api_key
                 )
                     .subscribe(
                         { result ->
